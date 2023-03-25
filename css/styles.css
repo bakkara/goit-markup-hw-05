@@ -175,11 +175,14 @@ img {
 .header-item-link:focus::after {
  opacity: 1;
 }
+
 .header-item-link.current::after {
-  color: var(--color-ocean);
   opacity: 1;
 }
 
+..header-item-link.current {
+  color: var(--color-ocean);
+}
 .contact {
   font-size: 16px;
   letter-spacing: 0.02em;
